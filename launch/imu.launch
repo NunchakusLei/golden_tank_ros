@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+     <include file="$(find ros_imu_bno055)/launch/imu.launch">
+        <arg name="serial_port" value="/dev/ttyUSB_IMU" />
+        <arg name="frame_id" value="imu_link" />
+        <arg name="operation_mode" value="IMU"/>
+        <arg name="oscillator" value="INTERNAL" />
+        <arg name="reset_orientation" value="true" />
+        <arg name="frequency" value="50" />
+        <arg name="use_magnetometer" value="false" />
+        <arg name="use_temperature" value="false" />
+    </include>
+</launch>
