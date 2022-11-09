@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- BNO055 IMU -->
+    <include file="$(find golden_tank_ros)/launch/imu.launch"/>
+    <include file="$(find golden_tank_ros)/launch/tf.launch"/>
+    <include file="$(find golden_tank_ros)/launch/odom_fusion.launch"/>
+
+    <node pkg="golden_tank_ros" type="golden_tank_ros_bringup.py" name="move_base" output="screen">
+    </node>
+</launch>

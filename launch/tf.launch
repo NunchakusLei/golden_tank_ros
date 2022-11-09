@@ -2,6 +2,6 @@
 <launch>
     <!-- IMU: BNO055 -->
     <node pkg="tf" type="static_transform_publisher" name="baselink2imu"
-        args="0 0 0 0 0 0 base_link imu_link 5"/>
+        args="0 0 0 0 0 0 base_link imu_link 20"/>
 </launch>
 
