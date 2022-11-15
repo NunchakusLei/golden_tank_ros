@@ -3,5 +3,9 @@
     <!-- IMU: BNO055 -->
     <node pkg="tf" type="static_transform_publisher" name="baselink2imu"
         args="0 0 0 0 0 0 base_link imu_link 20"/>
+
+    <!-- Camera: KS2A17 -->
+    <node pkg="tf" type="static_transform_publisher" name="baselink2cam"
+        args="0.1 0 0.05 0 0 0 base_link KS2A17_webcam 20"/>
 </launch>
 

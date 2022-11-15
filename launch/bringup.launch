@@ -4,6 +4,7 @@
     <include file="$(find golden_tank_ros)/launch/imu.launch"/>
     <include file="$(find golden_tank_ros)/launch/tf.launch"/>
     <include file="$(find golden_tank_ros)/launch/odom_fusion.launch"/>
+    <include file="$(find golden_tank_ros)/launch/camera_KS2A17.launch"/>
 
     <node pkg="golden_tank_ros" type="golden_tank_ros_bringup.py" name="move_base" output="screen">
     </node>
